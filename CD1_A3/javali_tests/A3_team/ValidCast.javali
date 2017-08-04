@@ -1,0 +1,26 @@
+class X{
+
+}
+
+class Main {
+	void main() {
+		X x;
+		Z z;
+		D d;
+
+		int lk;
+
+		lk = 0;
+		x = new X();
+		z = (Z)x; // down cast
+		d = (D)x; // 2 step down cast
+		x = (X)d; // 2 step up cast
+		
+	}
+}
+class Z extends X{
+
+}
+class D extends Z {
+
+}

@@ -1,0 +1,68 @@
+class Main
+{
+	LinkedList start;
+	void main()
+	{
+		int i;
+		LinkedList current;
+		
+		start = new LinkedList();
+		start.init(1);
+		
+		current = start;
+		i = 2;
+		
+		while (i <= 10)
+		{
+			current.next = new LinkedList();
+			current.next.init(i);
+			current = current.next;
+			i = i+1;
+		}
+
+		start.printNum(5);	
+		
+	}
+}
+
+
+class LinkedList
+{
+	int val;
+	LinkedList next;
+	
+	void init(int i)
+	{
+		val = i;
+		next = null;
+	}
+	
+	void printNum(int count)
+	{
+		LinkedList current;
+		
+		current = this;
+		
+		while (count > 0)
+		{
+			current.print();
+			current = current.next;
+			if (current == null)
+			{
+				return;
+			}
+			
+			count = count-1;
+		}
+		return;
+	}
+
+	void print()
+	{
+		write(val);
+		writeln();
+	}
+
+}
+
+

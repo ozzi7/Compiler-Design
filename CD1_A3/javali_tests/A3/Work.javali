@@ -1,0 +1,15 @@
+class Main
+{
+	int localA;
+	int localB;
+	
+	void main()
+	{
+		if (localA > localB)
+		{
+			
+		}
+	}
+}
+
+

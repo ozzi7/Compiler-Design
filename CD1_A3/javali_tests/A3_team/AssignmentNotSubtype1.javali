@@ -1,0 +1,19 @@
+class X {
+	int field;
+	int blablaSum(int x, float y, int z)
+	{
+		if(true) {
+}
+else
+{
+	x=y;
+}
+		return x+z;
+	}
+
+}
+
+class Main {
+	void main() {
+	}
+}

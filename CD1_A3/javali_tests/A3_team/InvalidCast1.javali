@@ -1,0 +1,24 @@
+class X {
+	int field;
+}
+
+class Main {
+	void main() {
+		X x;
+		Z z;
+		int lk;
+
+		lk = 0;
+		x = new X();
+		z = (Z)x;
+		
+	}
+}
+class Z{
+	int a;
+	int b;
+	float bla(int zuu)
+	{
+		return 3.14*3.14;
+	}
+}

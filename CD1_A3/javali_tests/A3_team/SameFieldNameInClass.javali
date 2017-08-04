@@ -1,0 +1,16 @@
+class X {
+	int field;
+}
+
+class Main {
+	void main() {
+		X x;
+		
+		x = new X();
+	}
+}
+class Y {
+	int a;
+	int b;
+	int a;
+}

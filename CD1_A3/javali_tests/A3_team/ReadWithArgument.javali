@@ -1,0 +1,19 @@
+class X {
+	int field;
+}
+
+class Main {
+	void main() {
+		X x;
+		int a;
+		a = read(4);
+	}
+}
+class Y {
+	int a;
+	int b;
+	int bla(int zuu)
+{
+return 567;
+}
+}

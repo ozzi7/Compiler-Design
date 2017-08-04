@@ -1,0 +1,16 @@
+class Main
+{
+	A start;
+	void main()
+	{
+		start = null;
+		write(start.x);
+	}
+}
+
+class A
+{
+	int x, y;
+	A a;
+}
+

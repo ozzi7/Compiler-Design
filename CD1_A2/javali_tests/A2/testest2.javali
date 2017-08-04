@@ -1,0 +1,34 @@
+
+class A17bGF {
+	// comment..
+
+	int a,b,c;
+	float d,e;
+	bool z,u;
+	int k;
+	float t;
+
+	int someMethod1()
+	{
+		a=6*5+B34.someMethod2().someMethod();
+		D.b()=4*3+Bhahaha2.a;
+		return b.bla()*b.bla();
+	}
+}
+
+
+class B34 {
+	
+	float a,b,c,d;
+	float someMethod2()
+	{
+		// some arithmetic...
+		b=(c*d%b+(c+(d+e))/89)*0x76bd;
+		A17bGF.a.b.d.methodXYZ(34)=A17bGF.x.getValue();
+		return 66*s;
+	}
+	void someMethod3()
+	{
+
+	}
+}

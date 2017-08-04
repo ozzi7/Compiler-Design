@@ -1,0 +1,13 @@
+// No class method main
+
+class X {
+	int field;
+}
+
+class Main {
+	void hello() {
+		X x;
+		
+		x = new X();
+	}
+}

@@ -1,0 +1,52 @@
+Debug information for file: .\javali_tests\A3_team\AssignmentToUnassignableThingy.javali
+AST Resulting From Parsing Stage:
+ClassDecl (name: X, superClass: Object)
+| VarDecl (name: field, type: int)
+ClassDecl (name: Main, superClass: X)
+| MethodDecl (argumentNames: [], argumentTypes: [], name: main, returnType: void)
+| | Seq ()
+| | | VarDecl (name: x, type: X)
+| | | VarDecl (name: z, type: Z)
+| | | VarDecl (name: d, type: D)
+| | | VarDecl (name: result, type: int)
+| | | VarDecl (name: ma, type: Main[])
+| | | VarDecl (name: obj, type: Object)
+| | Seq ()
+| | | Assign ()
+| | | | ThisRef ()
+| | | | Cast (typeName: Z)
+| | | | | Var (name: x)
+ClassDecl (name: Z, superClass: X)
+| VarDecl (name: a, type: int)
+| VarDecl (name: b, type: int)
+| VarDecl (name: d, type: D)
+| MethodDecl (argumentNames: [x, z, d, obj], argumentTypes: [X, Z, D, Object], name: bla, returnType: float)
+| | Seq ()
+| | Seq ()
+| | | ReturnStmt ()
+| | | | BinaryOp (operator: B_TIMES)
+| | | | | FloatConst (value: 3.14)
+| | | | | FloatConst (value: 3.14)
+| MethodDecl (argumentNames: [], argumentTypes: [], name: blabla, returnType: float)
+| | Seq ()
+| | Seq ()
+| | | ReturnStmt ()
+| | | | FloatConst (value: 434.3)
+ClassDecl (name: D, superClass: Z)
+| MethodDecl (argumentNames: [], argumentTypes: [], name: exists, returnType: int)
+| | Seq ()
+| | Seq ()
+| | | ReturnStmt ()
+| | | | IntConst (value: 4)
+Error message from reference is: 'this' is not a valid lvalue
+Error message: assignment in Main.main(...)
+
+Phase semantic failed because we expected to see:
+NOT_ASSIGNABLE
+But we actually saw:
+TYPE_ERROR
+The difference is:
+At line   1 /   1:
+< NOT_ASSIGNABLE
+> TYPE_ERROR
+

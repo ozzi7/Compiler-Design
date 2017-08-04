@@ -1,0 +1,16 @@
+// class named object
+
+class X {
+	int field;
+}
+
+class Main {
+	void main() {		
+	
+	}
+}
+class Object {
+void hi()
+{
+}
+}

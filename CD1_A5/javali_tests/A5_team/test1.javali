@@ -1,0 +1,62 @@
+class Main
+{
+	A_Super_Class object;
+	void main()
+	{
+		float q;
+		A_Class a;
+		a = new A_Class();
+		a.x = 99;
+		a.y = 0.5;
+
+		object = a;
+
+		object.updateAndPrint(12);
+		object.updateAndPrint(14);
+		
+		write(a.getX()); writeln();
+	}
+}
+
+class A_Super_Class
+{
+
+	void updateAndPrint(int amount)
+	{
+		update(amount);
+		print();
+	}
+
+	void print()
+	{
+
+	}
+
+	void update(int amount)
+	{
+
+	}
+}
+
+class A_Class extends  A_Super_Class
+{
+	int x;
+	float y;
+
+	void print()
+	{
+		write(x); writeln();
+		writef(y); writeln();
+		writeln();
+	}
+
+	void update(int amount)
+	{
+		x = amount;
+	}
+	
+	int getX()
+	{
+		return x;
+	}
+}

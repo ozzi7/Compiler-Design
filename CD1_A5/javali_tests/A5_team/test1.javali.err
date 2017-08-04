@@ -1,0 +1,62 @@
+Debug information for file: javali_tests/A5_team/test1.javali
+AST Resulting From Parsing Stage:
+ClassDecl (name: Main, superClass: Object)
+| VarDecl (name: a, type: int)
+| VarDecl (name: d, type: int)
+| VarDecl (name: e, type: float)
+| MethodDecl (argumentNames: [], argumentTypes: [], name: main, returnType: void)
+| | Seq ()
+| | | VarDecl (name: b, type: int)
+| | | VarDecl (name: c, type: int)
+| | | VarDecl (name: f, type: int)
+| | Seq ()
+| | | Assign ()
+| | | | Var (name: b)
+| | | | IntConst (value: 152)
+| | | Assign ()
+| | | | Var (name: a)
+| | | | IntConst (value: 174)
+| | | Assign ()
+| | | | Var (name: c)
+| | | | Var (name: b)
+| | | Assign ()
+| | | | Var (name: d)
+| | | | IntConst (value: 37)
+| | | Assign ()
+| | | | Var (name: e)
+| | | | FloatConst (value: 0.2)
+| | | BuiltInWrite ()
+| | | | Var (name: a)
+| | | BuiltInWriteln ()
+| | | BuiltInWrite ()
+| | | | Var (name: b)
+| | | BuiltInWriteln ()
+| | | BuiltInWrite ()
+| | | | Var (name: c)
+| | | BuiltInWriteln ()
+| | | BuiltInWrite ()
+| | | | Var (name: d)
+| | | BuiltInWriteln ()
+| | | BuiltInWriteFloat ()
+| | | | Var (name: e)
+| | | BuiltInWriteln ()
+
+Phase exec failed because we expected to see:
+174
+152
+152
+37
+0.20000
+
+But we actually saw:
+174
+152
+152
+37
+-0.000000
+
+The difference is:
+At line   5 /   5:
+< 0.20000
+> -0.000000
+

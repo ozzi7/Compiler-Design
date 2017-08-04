@@ -1,0 +1,35 @@
+class X{
+	int field;
+}
+
+class Main extends X{
+	void main() {			
+	}
+}
+class Z extends Main{
+	int a;
+	int b;
+	D d;
+	float bla(X x, Z z, D d, Object obj)
+	{
+		if(true){
+			return 3.4;}
+		else {
+			if(true){
+				return 4.4;
+				}
+			else {
+				}
+			if(true)
+			{return 3.4;
+}
+else
+{return 3.4;}
+		}
+	}
+	float blabla()
+	{
+		return 434.3;
+	}
+}
+class D extends Z {int exists(){return 4;}}

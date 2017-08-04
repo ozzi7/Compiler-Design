@@ -1,0 +1,15 @@
+class Main
+{
+	int[] a;
+	void main()
+	{
+		Object o;
+	
+		a = new int[-1];
+		a[1] = 7;
+		write(a[1]);
+		
+	}
+
+}
+

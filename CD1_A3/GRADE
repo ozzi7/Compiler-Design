@@ -1,0 +1,9 @@
+nameyoulike: 19.5/20
+
+Comments:
+* In SematicExprVisitor.returnStmt(...) you don't take into
+  consideration that return statements can have an
+  optional expression (-0.5 pts)
+  
+* You forgot to add Object[] to your array table
+  (-0.5 pts)

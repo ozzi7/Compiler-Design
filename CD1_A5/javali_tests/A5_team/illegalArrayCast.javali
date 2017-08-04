@@ -1,0 +1,22 @@
+class Main
+{
+	int[] a;
+	A_Class[] aa;
+	
+	void main()
+	{
+		Object o;
+	
+		a = new int[20];
+		o = a;
+		aa = (A_Class[])o;
+		
+	}
+
+}
+
+class A_Class
+{
+	float x;
+	float y;
+}

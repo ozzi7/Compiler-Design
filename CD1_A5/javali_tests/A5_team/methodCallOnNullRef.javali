@@ -1,0 +1,25 @@
+class Main
+{
+	A_Class a;
+	
+	void main()
+	{
+		int x;
+		
+		a = null;
+		
+		x = a.do(7);
+		
+	}
+
+}
+
+class A_Class
+{
+	int x;
+	
+	int do(int a)
+	{
+		return x+a;
+	}
+}

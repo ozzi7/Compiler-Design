@@ -1,0 +1,19 @@
+class X {
+	int field;
+}
+
+class Main {
+	void main() {
+		X x;
+		float u;
+		writeln(4);
+	}
+}
+class Y {
+	int a;
+	int b;
+	int bla(int zuu)
+{
+return 567;
+}
+}

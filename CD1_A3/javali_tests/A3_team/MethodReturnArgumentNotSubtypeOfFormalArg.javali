@@ -1,0 +1,31 @@
+class X{
+	int field;
+}
+
+class Main extends X{
+	void main() {
+		X x;
+		Z z;
+		D d;
+		int[] result;
+		result = new int[5];
+		d=z.blabla(33.2);
+			
+	}
+}
+class Z extends Main{
+	int a;
+	int b;
+	D d;
+	float bla(X x, Z z, D d, Object obj)
+	{
+		return 3.14*3.14;
+	}
+	D blabla(float abc)
+	{
+		X x;
+		x = new X();
+		return x;
+	}
+}
+class D extends X {int exists(){return 4;}}

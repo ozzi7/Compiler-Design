@@ -1,0 +1,23 @@
+class Main
+{	
+	A a;
+	float[] aa;
+	void main()
+	{
+		Object o;
+		Object[] oa;
+		
+
+		
+		aa = new float[4];
+		o = aa;
+		aa = (float[])o;
+		
+	}
+
+}
+
+class A
+{
+
+}

@@ -1,0 +1,28 @@
+class X{
+	int field;
+}
+
+class Main {
+	void main() {
+		X x;
+		Z z;
+		D d;
+
+		int lk;
+		int zu;
+
+		lk = 0;
+		zu =5;
+		lk = (lk)zu;
+		
+	}
+}
+class Z extends X{
+	int a;
+	int b;
+	float bla(int zuu)
+	{
+		return 3.14*3.14;
+	}
+}
+class D extends Z {}

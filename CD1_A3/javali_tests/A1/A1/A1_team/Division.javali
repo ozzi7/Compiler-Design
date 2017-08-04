@@ -1,0 +1,15 @@
+// test expression evaluation with 8 variables
+class Main {
+	void main() {
+		int r1, r2, r3;
+		
+		r1 = 19;
+		r2 = 4;
+		r3 = (r1+r2)/r2;
+
+		write(r3); writeln();
+		write((r1*r2)/r3); writeln();
+		write((r3*r1*r2)/(r3-r2)); writeln();
+		
+	}
+}

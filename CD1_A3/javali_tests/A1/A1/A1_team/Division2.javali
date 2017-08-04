@@ -1,0 +1,18 @@
+// test expression evaluation with division
+class Main {
+	void main() {
+		int i0, i1, i2, i3;
+		int r1, r2, r3;
+		
+		i0 = 200;
+		i1 = 20;
+		i2 = 5;
+		i3 = 1;
+		
+		r1 = i0/i1;
+		r2 = i0/40;
+		r3 = ((((i0/r1)*i2)*11)/i2)*(r1/r2);
+		
+		write(r3); writeln();
+	}
+}

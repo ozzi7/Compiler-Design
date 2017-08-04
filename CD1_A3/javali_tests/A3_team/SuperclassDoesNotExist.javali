@@ -1,0 +1,13 @@
+// No class Z
+
+class X {
+	int field;
+}
+
+class Main extends Z {
+	void main() {
+		X x;
+		
+		x = new X();
+	}
+}

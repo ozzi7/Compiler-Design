@@ -1,0 +1,22 @@
+// recursion 
+class Main 
+{ 
+	void main() 
+	{ 
+		int x; 
+		x = bla(100); 
+		write(x); 
+	} 
+	
+	int bla(int a) 
+	{ 
+		if(a > 0) 
+		{ 
+			return a + bla(a-1); 
+		} 
+		else 
+		{ 
+			return 0; 
+		} 
+	} 
+}

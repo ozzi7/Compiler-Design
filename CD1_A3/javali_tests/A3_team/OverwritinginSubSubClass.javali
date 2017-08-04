@@ -1,0 +1,31 @@
+class X {
+	int field;
+	int blablaSum(int x, float y, int z)
+	{
+		return x+z;
+	}
+}
+
+class Main {
+	void main() {
+		X x;
+		
+		x = new X();
+	}
+}
+class Y extends X {
+	int a;
+	void hello()
+{
+}
+void bla()
+{
+}
+}
+
+class Z extends Y {
+	int blablaSum(int x, float y, int z)
+	{
+		return x+z;
+	}
+}

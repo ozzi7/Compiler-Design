@@ -1,0 +1,58 @@
+Memory layout:
+	Each variable and field (even boolean) use 4 bytes of memory
+
+Object memory layout:
+	0		Class-Table-Pointer
+	4		field1
+	8		field2
+	12		field3
+	16		field4
+	20		field5
+	...
+
+Class-Table memory layout
+	0		Class-Table-Pointer (Superclass)
+	4		methodPointer 1
+	8		methodPointer 2
+	12		methodPointer 3
+	...
+
+
+Call-Stack:
+	0		return address   <--- %esp
+	-4		Object* this
+	-8		arg1
+	-12		arg2
+	...
+
+	n		local1
+	n-4		local2
+	...
+	
+	m		temp1    (6 for general purpose registers + enouth for spilling)
+	m-4	temp2
+	...
+
+
+%eax not used by our call stack design. It's being used as return arg and temp register. 
+%ebp is being used as general purpose register. 
+%esp always points to the return address of the current method
+
+Extras:
+
+-null pointer dereference error.
+-array index out of bounds.
+-new array with negative size.
+
+-no support for covariant arrays, but we check array casts to non Object arrays:
+	A a;
+	B b;
+	Object o;
+	a = new A[5];
+	o = (Object[])a;
+	a = (A[])o; 				<-- is allowed
+	b = (B[])o;				<-- not allowed (dynamic type check)
+	
+
+
+

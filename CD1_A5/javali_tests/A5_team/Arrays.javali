@@ -1,0 +1,29 @@
+class Main
+{
+	int[] a;
+	
+	void main()
+	{
+		int size;
+		int i;
+		
+		size = 100;
+	
+		a = new int[size];
+		
+		a[0] = 1;
+		a[1] = 1;
+		
+		i = 2;
+		while (i < size)
+		{
+			a[i] = a[i-1]+a[i-2];
+			write(a[i]); writeln();
+			i = i+1;
+		}
+		
+	}
+}
+
+
+

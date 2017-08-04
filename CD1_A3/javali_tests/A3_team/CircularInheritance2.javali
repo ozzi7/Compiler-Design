@@ -1,0 +1,19 @@
+// circular inheritance A->B->C->D->B
+
+class A extends B {
+}
+
+class B extends C {
+}
+
+class C extends D {
+}
+
+class D extends B {
+}
+
+class Main {
+  void main() {
+    writeln();
+  }
+}

@@ -1,0 +1,32 @@
+class Main
+{
+	void main()
+	{
+		int x, y, add, sub, mul, div, neg;
+		
+		x = read();
+		y = read();
+		
+		add = x+y;
+		sub = x-y;
+		mul = x*y;
+		div = y%x;
+		neg = -y;
+		
+		write(add); writeln();
+		write(sub); writeln();
+		write(mul); writeln();
+		write(div); writeln();
+		write(neg); writeln();
+		
+		if ((y > x) && (y < 100))
+		{
+			write(1); writeln();
+		}
+
+	}
+}
+
+
+
+

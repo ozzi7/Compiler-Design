@@ -1,0 +1,29 @@
+class X{
+	int field;
+}
+
+class Main {
+	void main() {
+		X x;
+		Z z;
+		D d;
+		float result;
+		
+		z = new Z();
+		result = z.bla(z.blala());
+		
+	}
+}
+class Z extends X{
+	int a;
+	int b;
+	float bla(int zuu)
+	{
+		return 3.14*3.14;
+	}
+	float blabla()
+	{
+		return 323.0*434.0+3.12-3;
+	}
+}
+class D extends Z {}

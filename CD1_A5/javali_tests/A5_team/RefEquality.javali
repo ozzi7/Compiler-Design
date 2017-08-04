@@ -1,0 +1,17 @@
+class Main
+{
+	Main a;
+	void main()
+	{
+		a = this;
+		if (a == this)
+		{
+			write(1);
+		}
+		
+		
+	}
+}
+
+
+

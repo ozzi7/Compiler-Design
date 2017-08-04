@@ -1,0 +1,32 @@
+class Main
+{
+	void main()
+	{
+		float x, y, add, sub, mul, div, neg;
+		
+		x = readf();
+		y = readf();
+		
+		add = x+y;
+		sub = x-y;
+		mul = x*y;
+		div = x/y;
+		neg = -x;
+		
+		writef(add); writeln();
+		writef(sub); writeln();
+		writef(mul); writeln();
+		writef(div); writeln();
+		writef(neg); writeln();
+		
+		if (y > x)
+		{
+			write(1); writeln();
+		}
+
+	}
+}
+
+
+
+

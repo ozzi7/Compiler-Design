@@ -1,0 +1,2 @@
+TYPE_ERROR
+Expected int or float for operands but found type boolean

@@ -1,0 +1,22 @@
+class X {
+	int field;
+}
+
+class Main {
+	void main() {
+		X x;
+		int lk;
+		lk = 0;
+		x = new X();
+
+		write(lk,lk);
+	}
+}
+class Y {
+	int a;
+	int b;
+	float bla(int zuu)
+{
+return 3.14*3.14;
+}
+}

@@ -1,0 +1,15 @@
+class X {
+	int field;
+	int blablaSum(int x, float y, int z)
+	{
+		while(4.12) {
+}
+		return x+z;
+	}
+
+}
+
+class Main {
+	void main() {
+	}
+}

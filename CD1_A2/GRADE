@@ -1,0 +1,11 @@
+nameyoulike : 29.8/30
+* Part a): 10/10
+* Part b): 10/10
+* Part c): 9.8/10
+
+Comments:
+* Part a):
+* Part b):
+* Part c):
+   - You forgot to handle the case of primitive types arrays in both array creation and casts
+     (-0.2 pts)

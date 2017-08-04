@@ -1,0 +1,19 @@
+In the review hours it was noted that the generated assembly code leads to segmentation faults.
+The reason being a mistake in methodDecl where the prologue is emitted. The instructions:
+
+enter $8, $0 and
+
+pushl %ebp
+movl %esp, %ebp
+subl %esp, 10
+
+are in fact identical, so only one of them is needed. When the final return instruction gets called
+the wrong return address is loaded.
+
+Additionally, the main function does not return 0. Adding
+
+movl $0, %eax
+
+before calling leave and return will solve this problem.
+
+

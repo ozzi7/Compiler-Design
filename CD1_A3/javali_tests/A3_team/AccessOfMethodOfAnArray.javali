@@ -1,0 +1,29 @@
+class X{
+	int field;
+}
+
+class Main extends X{
+	void main() {
+		X x;
+		Z z;
+		D d;
+		int[] result;
+		result = new int[5];
+		result[4] = result.bla();
+			
+	}
+}
+class Z extends Main{
+	int a;
+	int b;
+	D d;
+	float bla(X x, Z z, D d, Object obj)
+	{
+		return 3.14*3.14;
+	}
+	void blabla()
+	{
+		return 434.3;
+	}
+}
+class D extends Z {int exists(){return 4;}}

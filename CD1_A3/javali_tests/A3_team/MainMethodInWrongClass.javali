@@ -1,0 +1,13 @@
+class X {
+	int field;
+	int blablaSum(int x, float y, int z)
+	{
+	return x+z;
+	}
+	void main() {
+	}
+}
+
+class Main {
+
+}

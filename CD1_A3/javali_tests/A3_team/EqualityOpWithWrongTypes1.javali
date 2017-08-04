@@ -1,0 +1,38 @@
+class X extends Y{
+	int field;
+	int blablaSum(int x, float y, int z)
+	{
+		if(false) {
+		}
+
+		else
+		{
+		}
+		return x+z;
+	}
+
+}
+class Y {
+}
+
+class Main {
+	void main() {
+	boolean a;
+	X x;
+	Y y;
+	Z z;
+	bla bla;
+
+	z = new Z();
+	x = new X();
+	y = new Y();
+	bla = new bla();
+	y = x;
+	y = z;
+
+	a = z!=bla;
+	}
+}
+
+class Z extends X{}
+class bla{}
